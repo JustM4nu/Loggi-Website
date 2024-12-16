@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggi Beta Tester Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav>
+        <div class="logo">
+            <a href="https://github.com/JustM4nu/justm4nu.github.io/blob/main/loggi-logo.png?raw=true">
+                <img src="https://github.com/JustM4nu/justm4nu.github.io/blob/main/loggi-logo.png?raw=true" alt="Loggi Logo" style="height: 50px; width: auto;">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <section id="beta-application" class="beta-application">
+        <h1>Beta Tester Application</h1>
+        <p>Please fill out the form below to apply for the Loggi Beta Testing Program. Your input helps us improve!</p>
+        
+        <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="discord">Discord Username (if any):</label>
+            <input type="text" id="discord" name="discord" placeholder="Enter your Discord username (e.g., User#1234)">
+
+            <label for="loggi-knowledge">How long have you known about Loggi?</label>
+            <select id="loggi-knowledge" name="loggi-knowledge" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="less-than-a-week">Less than a week</option>
+                <option value="1-4-weeks">1-4 weeks</option>
+                <option value="1-3-months">1-3 months</option>
+                <option value="more-than-3-months">More than 3 months</option>
+            </select>
+
+            <label for="source">How did you hear about Loggi?</label>
+            <select id="source" name="source" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="friend">A friend</option>
+                <option value="social-media">Social media</option>
+                <option value="online-search">Online search</option>
+                <option value="forum">Forum or community</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="feedback">Why do you want to become a Beta Tester?</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Describe why you'd like to join our Beta Testing Program" required></textarea>
+
+            
+            <div class="g-recaptcha" data-sitekey="6LciZJ0qAAAAANy37fbj6cxuo51qlauD4X76a4Kh"></div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loggi. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
